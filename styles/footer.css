@@ -1,0 +1,77 @@
+#footer {
+    background-color: #353735;
+    color: #ecf0f1;
+    padding: 40px 50px 20px 50px;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+.footer-column h4 {
+    font-family: 'Klavika', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 1px solid #0076A8;
+    padding-bottom: 10px;
+}
+.footer-column p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.footer-column p i {
+    margin-right: 10px;
+    color: #1abc9c;
+}
+.social-icons a {
+    display: inline-block;
+    color: #ecf0f1;
+    background-color: #0076A8;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+    background-color: #FDC82F;
+    color: #fff;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #0076A8;
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+.terminos-aviso-footer {
+text-align: center;
+}
+
+.link-terminos {
+    display: inline;
+    margin: auto;
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+.link-terminos:hover {
+    cursor: pointer;
+    color: white;
+}
