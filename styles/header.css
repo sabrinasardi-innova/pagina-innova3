@@ -236,14 +236,14 @@ a {
 /* BREAKPOINTS */
 
 /* For small devices */
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 300px) {
   .dropdown__group {
     padding-left: 1.5rem;
   }
 }
 
 /* For large devices */
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1118px) {
   /* Nav*/
 
   .nav-container {
@@ -258,7 +258,8 @@ a {
     pointer-events: auto;
     top: 0;
     
-    margin-left: clamp(40px, 6vw, 100px);
+    display: flex;
+    margin: auto;
     height: 100%;
   }
 
