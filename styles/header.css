@@ -190,11 +190,13 @@ a {
 .dropdown__content-acreditaciones,
 .dropdown__content-portafolio {
   row-gap: 1.75rem;
+  align-items: start;
 }
 
 .dropdown__group {
   padding-left: 3rem;
   row-gap: 0.5rem;
+  align-content: start;
 }
 
 .dropdown__group:first-child {
@@ -281,11 +283,12 @@ a {
     padding: 0;
 
     font-family: "Avenir";
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .nav__link:hover {
     background-color: #fafafa;
+    font-weight: 500;
   }
 
   .nav__link.active {
