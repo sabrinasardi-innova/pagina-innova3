@@ -1,3 +1,5 @@
+/*Base*/
+
 /* PORTADA */
 
 .portada {
@@ -61,14 +63,13 @@
 .main-content-aviso {
   padding-inline: clamp(40px, 5vw, 100px);
   padding-bottom: 0;
-  width: 80%;
 
   margin: 0 auto;
 }
 
 .h3-aviso {
     font-family: "Klavika";
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
     color: #1c6b96;
 
     margin-top: 1.2rem;
@@ -84,9 +85,48 @@ ol {
 
 ol li {
   margin-bottom: 0.2rem;
+   padding-left: 0.5rem;
 }
 
 li::marker {
     font-weight: 500;
 }
 
+.h4-aviso {
+    font-family: "Klavika";
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #1c6b96;
+
+    margin-top: 1.2rem;
+}
+
+.bold-texto {
+  font-weight: 500;
+}
+
+.subtitulo {
+  font-weight: 600;
+}
+
+
+/* NAV MOBILE*/
+@media screen and (max-width: 1118px){
+p {
+  font-size: 1rem;
+}
+
+.main-content-aviso {
+  width: 90%;
+}
+}
+
+/* For desktop */
+@media screen and (min-width: 1119px){
+p {
+  font-size: 1.2rem;
+}
+
+.main-content-aviso {
+  width: 80%;
+}
+}
