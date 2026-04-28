@@ -18,7 +18,7 @@ const showMenu = () => {
 
     if (dropdownButton) {
       dropdownButton.addEventListener("click", () => {
-        if (window.innerWidth > 1118) return; // 👈 CLAVE
+        if (window.innerWidth > 1200) return; // 👈 CLAVE
 
         const showDropdown = document.querySelector(".show-dropdown");
 
