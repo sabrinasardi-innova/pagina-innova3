@@ -8,7 +8,7 @@
     />
 
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/fonts.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -16,7 +16,7 @@
       <nav class="nav-container">
         <div class="nav__data">
           <img class="nav__logo" src="imágenes/logi.png" alt="logo-innova3" />
-          
+
           <div class="nav__toggle" id="nav__toggle">
             <i class="ri-menu-line nav__toggle-menu"></i>
             <i class="ri-close-line nav__toggle-close"></i>
@@ -30,8 +30,35 @@
             </li>
 
             <!-- DROPDOWN 1-->
-            <li>
-              <a href="#" class="nav__link">NOSOTROS</a>
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">  
+                NOSOTROS
+                <i class="ri-arrow-drop-down-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <span class="dropdown__title">QUIENES SOMOS</span>
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Misión, Visión & Valores</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <span class="dropdown__title">PERSONAL</span>
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Intranet</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
             </li>
 
             <!-- DROPDOWN 2-->
@@ -87,7 +114,12 @@
                         >
                       </li>
                       <li>
-                        <a href="https://innova3railways.com/services-es" target="blank" class="dropdown__link">Trenes</a>
+                        <a
+                          href="https://innova3railways.com/services-es"
+                          target="blank"
+                          class="dropdown__link"
+                          >Trenes</a
+                        >
                       </li>
                       <li>
                         <a href="#" class="dropdown__link">Tuberías</a>
@@ -96,13 +128,20 @@
                   </div>
 
                   <div class="dropdown__group">
-                    <span class="dropdown__title">LABORATORIO DE MATERIALES</span>
+                    <span class="dropdown__title"
+                      >LABORATORIO DE MATERIALES</span
+                    >
                     <ul class="dropdown__list">
                       <li>
                         <a href="#" class="dropdown__link">Construcción</a>
                       </li>
                       <li>
-                        <a href="https://innova3railways.com/services-es" target="_blank" class="dropdown__link">Metal-Mecánica</a>
+                        <a
+                          href="https://innova3railways.com/services-es"
+                          target="_blank"
+                          class="dropdown__link"
+                          >Metal-Mecánica</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -116,7 +155,12 @@
                         >
                       </li>
                       <li>
-                        <a href="https://innova3railways.com/index-es" target="blank" class="dropdown__link">Trenes</a>
+                        <a
+                          href="https://innova3railways.com/index-es"
+                          target="blank"
+                          class="dropdown__link"
+                          >Trenes</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -135,8 +179,6 @@
                         >
                       </li>
                     </ul>
-
-                
                   </div>
                 </div>
               </div>
@@ -215,9 +257,7 @@
                     <span class="dropdown__title">ASPHALT INSTITUTE</span>
                     <ul class="dropdown__list">
                       <li>
-                        <a href="#" class="dropdown__link"
-                          >Diseño de Mezclas</a
-                        >
+                        <a href="#" class="dropdown__link">Diseño de Mezclas</a>
                       </li>
                     </ul>
                   </div>
@@ -235,7 +275,6 @@
             <button class="lang-button">ES</button>
             <button class="lang-button">ENG</button>
           </div>
-
         </div>
       </nav>
     </header>

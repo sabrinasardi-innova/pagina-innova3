@@ -1,0 +1,274 @@
+/* BASE */
+
+.contacto-info {
+  display: flex;
+  flex: 1.5;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+#contact-form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea,
+#contact-form select {
+  padding: 8px;
+  font-size: 1.25rem;
+
+  border-radius: 5px;
+  border: 1px lightgrey solid;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea {
+  width: 100%;
+}
+
+.form-group textarea {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 1.2rem;
+
+  resize: none;
+}
+
+.form-group input[type="text"] {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.form-group textarea {
+  margin-top: 0;
+}
+
+.form-group input[type="submit"] {
+  background: linear-gradient(to right, #ffa041, #ffc52e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: block;
+  margin: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  transition: all 0.5s ease;
+}
+
+.form-group-terms label {
+  width: auto;
+  margin-left: 8px;
+}
+
+#contact-form .form-group-terms label {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.terms-link {
+  font-weight: 600;
+  color: #1c6b96;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+ .info {
+    flex: 1;
+    margin-top: 0;
+  }
+
+.info h3 {
+  font-size: 1.5rem;
+}
+
+/* For desktop */
+@media screen and (min-width: 1119px) {
+
+  .contacto-h1 {
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+  
+  .contacto-container {
+    display: flex;
+  }
+
+  .formularios {
+    flex: 1;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+
+    max-width: 700px;
+
+    padding-top: 1rem;
+    margin-right: 70px;
+    margin-bottom: 6rem;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background: linear-gradient(to right, #0377a8, #3db3e3);
+    cursor: pointer;
+  }
+
+  .form-group input::placeholder {
+    font-family: "Avenir", sans-serif;
+    color: #a4a3a3;
+    font-weight: 400;
+  }
+
+  .form-group-terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .form-group-terms input[type="checkbox"] {
+    transform: scale(2);
+
+    padding: 0;
+
+    accent-color: #0776a8;
+  }
+
+  .mapa {
+    display: block;
+    min-height: 150px;
+    margin-bottom: 0;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 15px;
+
+    margin-bottom: 1rem;
+  }
+
+  .direccion-texto {
+    margin-top: 0px;
+
+    font-size: 1.2rem;
+  }
+
+  .cel-mail {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .datos-contacto {
+    margin-bottom: 2px;
+    margin-top: 0;
+  }
+
+  .contact-p {
+    margin-bottom: 20px;
+  }
+}
+
+/* NAV MOBILE*/
+@media screen and (max-width: 1118px) {
+  
+  .contacto-h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+  
+  .contacto-container {
+    display: block;
+    margin: 2rem 2rem auto 2rem;
+  }
+
+  .formularios {
+    display: block;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+
+    max-width: 700px;
+    margin: 2rem auto 3rem auto;
+  }
+
+  .form-group {
+    margin: 2rem auto 2rem auto;
+  }
+
+  .form-group-terms {
+    display: block;
+    margin: 1rem 4rem 1rem 4rem;
+  }
+
+  .form-group-terms input[type="checkbox"] {
+    transform: scale(1.5);
+
+    padding: 0;
+    margin-right: 0.5rem;
+
+    accent-color: #0776a8;
+  }
+
+  .mapa {
+    display: block;
+    min-height: 150px;
+    margin-bottom: 0;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 15px;
+
+    margin-bottom: 1rem;
+  }
+
+  .direccion-texto {
+    margin: 0 auto 0 auto;
+    font-size: 1.2rem;
+  }
+
+  .cel-mail {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .datos-contacto {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .contact-p {
+    margin-bottom: 1rem;
+  }
+}

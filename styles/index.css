@@ -1,8 +1,10 @@
+/* BASE */
 html {
   font-size: 16px;
 }
 
 body {
+  margin-top: 6rem;
   padding: 0;
   font-family: "Avenir", sans-serif;
   color: #444444;
@@ -10,9 +12,8 @@ body {
 }
 
 .main-content {
- padding-inline: clamp(20px, 5vw, 90px);
-  padding-bottom: 60px;
-
+  padding-inline: clamp(20px, 5vw, 90px);
+  padding-bottom: 0;
 }
 
 h1,
@@ -70,205 +71,3 @@ p {
   margin-top: 5px;
 }
 
-/* INTRANET */
-
-.intranet {
-font-family: "Avenir";
-font-size: 1.2rem;
-
-display: block;
-width: fit-content;
-margin-left: auto;
-}
-
-/* CONTACTO */
-
-.contacto-h1 {
-  text-align: left;
-  margin-left: 30px;
-}
-
-.contacto-container {
-  display: flex;
-  min-height: 500px;
-}
-
-.formularios {
-  flex: 1;
-  background-color: #fafafa;
-  border-radius: 10px;
-  border: 1px solid lightgray;
-
-  max-width: 700px;
-  margin-right: 70px;
-}
-
-.contacto-info {
-  display: flex;
-  flex: 1.5;
-  flex-direction: column;
-
-  height: 100%;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  width: 80%;
-  margin: 35px auto 35px auto; 
-}
-
-#contact-form label {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form textarea,
-#contact-form select {
-  padding: 8px;
-  font-size: 1.25rem;
-
-  border-radius: 5px;
-  border: 1px lightgrey solid;
-}
-
-#contact-form input[type="text"],
-#contact-form textarea {
-  width: 100%;
-}
-
-.form-group textarea {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-size: 1.2rem;
-
-  resize: none;
-}
-
-.form-group input[type="text"] {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-.form-group textarea {
-  margin-top: 0;
-}
-
-.form-group-terms input[type="checkbox"] {
-  transform: scale(2);
-
-  padding: 0;
-
-  accent-color: #0776a8;
-}
-
-.form-group input[type="submit"] {
-  background: linear-gradient(to right, #ffa041, #ffc52e);
-  color: white;
-  border: none;
-  border-radius: 10px;
-
-  font-family: "Avenir";
-  font-size: 1.2rem;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  display: block;
-  margin: auto;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-
-  transition: all 0.5s ease;
-}
-
-.form-group input[type="submit"]:hover {
-  background: linear-gradient(to right, #0377a8, #3db3e3);
-  cursor: pointer;
-} 
-
-.form-group input::placeholder {
-  font-family: "Avenir", sans-serif;
-  color: #a4a3a3;
-  font-weight: 400;
-}
-
-.form-group-terms {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  
-  gap: 8px;  
-  width: 80%;
-  margin: auto;
-}
-
-.form-group-terms label {
-    width: auto;
-    margin-left: 8px;
-}
-
-#contact-form .form-group-terms label {
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-.terms-link {
-  font-weight: 600;
-  color: #1c6b96;
-  font-size: 1.2rem;
-
-  cursor: pointer;
-}
-
-.mapa {
-  flex: 2;
-  min-height: 200px;
-  margin-bottom: 0;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 400px;
-  border: 0;
-  border-radius: 15px;
-
-  margin-bottom: 20px;
-}
-
-.info {
-  flex: 1;
-  margin-top: 0;
-}
-
-.info h3 {
-  font-size: 1.5rem;
-}
-
-.direccion-texto {
-  margin-top: 0px;
-
-  font-size: 1.2rem;
-}
-
-.cel-mail {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.datos-contacto {
-  margin-bottom: 2px;
-  margin-top: 0;
-}
-
-.contact-p {
-  margin-bottom: 20px;
-}

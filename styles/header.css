@@ -200,7 +200,7 @@ a {
 .dropdown__content,
 .dropdown__content-acreditaciones,
 .dropdown__content-portafolio {
-  row-gap: 1.75rem;
+  row-gap: 0.8rem;
   align-items: start;
 }
 
@@ -434,9 +434,7 @@ a {
     pointer-events: initial;
     cursor: initial;
   }
-}
 
-@media screen and (min-width: 1119px) {
   .container {
     margin-inline: auto;
   }
@@ -461,3 +459,5 @@ a {
   margin:auto;
   }
 }
+
+

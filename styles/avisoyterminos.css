@@ -1,0 +1,92 @@
+/* PORTADA */
+
+.portada {
+  position: relative;
+}
+
+.foto-portada {
+  width: 100%;
+  height: clamp(180px, 25vw, 350px);
+  overflow: hidden;
+
+  margin-bottom: 2rem;
+}
+
+.foto-portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-portada-contenedor {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  width: 80%;
+}
+
+.h1-aviso {
+    color: white;
+
+    font-family: "Klavika";
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 4rem);
+
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.h2-aviso {
+    color: white;
+
+    font-family: "Klavika";
+    font-weight: 400;
+    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.foto-portada::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* CONTENIDO */
+
+.main-content-aviso {
+  padding-inline: clamp(40px, 5vw, 100px);
+  padding-bottom: 0;
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.h3-aviso {
+    font-family: "Klavika";
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    color: #1c6b96;
+
+    margin-top: 1.2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ol {
+    padding-left: 3rem;
+}
+
+ol li {
+  margin-bottom: 0.2rem;
+}
+
+li::marker {
+    font-weight: 500;
+}
+
