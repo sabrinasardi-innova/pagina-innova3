@@ -1,8 +1,10 @@
 // --- FUNCIÓN MENÚ
 const showMenu = () => {
-  const toggle = document.getElementById("nav__toggle"),
-    nav = document.getElementById("nav-menu");
+  // BOTÓN HAMBURGUESA
+  const toggle = document.getElementById("nav__toggle");
+  const nav = document.getElementById("nav-menu");
 
+  // TOGGLE 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show-menu");
@@ -10,34 +12,53 @@ const showMenu = () => {
     });
   }
 
-  // 👇 AHORA SÍ: el DOM ya existe
+  // OBTENER TODOS LOS ITEMS QUE CONTIENE EL DROPDOWN
   const dropdownItems = document.querySelectorAll(".dropdown__item");
 
   dropdownItems.forEach((item) => {
     const dropdownButton = item.querySelector(".dropdown__button");
 
     if (dropdownButton) {
+      // EN DESKTOP IGNORA CLICKS
       dropdownButton.addEventListener("click", () => {
-        if (window.innerWidth > 1200) return; // 👈 CLAVE
-
-        const showDropdown = document.querySelector(".show-dropdown");
+        if (window.innerWidth > 1119) return; 
+        // SI SE ABRE UN NUEVO DROPDOWN CIERRA EL ANTERIOR
+        const openDropdown = document.querySelector(".show-dropdown");
 
         toggleItem(item);
 
-        if (showDropdown && showDropdown !== item) {
-          toggleItem(showDropdown);
+        if (openDropdown && openDropdown !== item) {
+          toggleItem(openDropdown);
         }
+      });
+    }
+  });
+
+  // AL REDIMENSIONAR LA VENTANA LIMPIA EL ESTADO DEL MENÚ
+  window.addEventListener ("resize", () => {
+    if (window.innerWidth >= 1119) {
+      if (nav) {
+        nav.classList.remove ("show-menu");  
+      }
+      if (toggle) {
+        toggle.classList.remove ("show-icon");
+      }
+      document.querySelectorAll (".show-dropdown").forEach((item) => {
+        const container = item.querySelector(".dropdown__container");
+        if (container) container.style.height = "0px";
+        item.classList.remove("show-dropdown"); 
       });
     }
   });
 };
 
+//ANIMACIÓN DE TRANSICIÓN DROPDOWN-MOVIL
 const toggleItem = (item) => {
   const dropdownContainer = item.querySelector(".dropdown__container");
 
   if (item.classList.contains("show-dropdown")) {
     // cerrar
-    dropdownContainer.style.height = 0;
+    dropdownContainer.style.height = "0px";
     item.classList.remove("show-dropdown");
   } else {
     // abrir
@@ -46,26 +67,34 @@ const toggleItem = (item) => {
   }
 };
 
-// --- SI EXISTEN placeholders → usa fetch
+//
 const headerPlaceholder = document.getElementById("header-placeholder");
 
 if (headerPlaceholder) {
-  Promise.all([
+  
+  const fetches = [
     fetch("header.html")
       .then((res) => res.text())
       .then((html) => {
         headerPlaceholder.innerHTML = html;
       }),
+  ];
 
+  const footerPlaceholder = document.getElementById("footer-placeholder");
+  if (footerPlaceholder) {
+    fetches.push(
     fetch("footer.html")
       .then((res) => res.text())
       .then((html) => {
-        document.getElementById("footer-placeholder").innerHTML = html;
+        footerPlaceholder.innerHTML = html;
       }),
-  ])
+    );
+  }
+  
+  Promise.all(fetches)
     .then(showMenu)
     .catch((error) => console.error("Error:", error));
 } else {
-  // SI estás en header.html directamente
+
   document.addEventListener("DOMContentLoaded", showMenu);
 }

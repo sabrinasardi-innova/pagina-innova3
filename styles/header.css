@@ -113,6 +113,16 @@ a {
     transition:
       top 0.4s,
       opacity 0.3s;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang-container {
+    order: -1;
+    margin-left: 0;
+    justify-content: flex-start;
+    padding: 0.8rem 2rem;
   }
 
   .nav-menu::-webkit-scrollbar {
@@ -283,8 +293,8 @@ a {
   }
 }
 
-/* For large devices */
-@media screen and (min-width: 1200px) {
+/* For desktop */
+@media screen and (min-width: 1119px) {
   /* Nav*/
 
   .nav-container {
@@ -426,7 +436,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1119px) {
   .container {
     margin-inline: auto;
   }
