@@ -78,14 +78,14 @@
   }
 
   .footer-container {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .footer-column,
   .footer-column-siguenos {
     flex: 1;
     min-width: 250px;
-    margin: 20px;
+    margin: 15px;
   }
 
   .h4-siguenos {
@@ -97,10 +97,16 @@
     padding-bottom: 10px;
   }
 
-  .footer-bottom {
-    padding-top: 20px;
+  .terminos-aviso-footer {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+  }
+
+   .footer-bottom {
+    padding-top: 5px;
     border-top: 1px solid #0076a8;
   }
+
 }
 
 /* NAV MOBILE*/
