@@ -13,9 +13,24 @@
 }
 
 .item {
-  width: 100vw; 
+  width: 100vw;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
+  position: relative;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2)
+  );
+
+  z-index: 90;
 }
 
 .list {
@@ -23,7 +38,7 @@
   top: 0;
   left: 0;
 
-  display: flex;        /* 👈 ESTO ES CLAVE */
+  display: flex;        
   height: 100%;
   width: max-content; 
 
@@ -34,6 +49,41 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  position: relative;
+  z-index: 80;
+}
+
+.texto-hero {
+    position: absolute;
+  z-index: 100;
+
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+
+  padding: 2rem;
+}
+
+.hero-h1 {
+    font-family: "Klavika";
+    font-size: 3rem;
+
+    color: white;
+}
+
+.hero-h2 {
+    font-family: "Klavika";
+    font-weight: 200;
+    font-size: 1.8rem;
+
+    color: white;
+
+    padding: 2rem;
 }
 
 .buttons {
@@ -46,6 +96,7 @@
   justify-content: space-between;
 
   transform: translateY(-50%);
+  z-index: 99;
 }
 
 .flecha-next,
@@ -80,6 +131,7 @@
 
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 
 .dots li {

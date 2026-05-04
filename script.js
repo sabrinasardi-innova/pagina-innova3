@@ -117,7 +117,7 @@ next.onclick = function () {
   reloadSlider();
 };
 
-prev.oneclick = function () {
+prev.onclick = function () {
   if (active - 1 < 0) {
     active = lengthItems;
   } else {
