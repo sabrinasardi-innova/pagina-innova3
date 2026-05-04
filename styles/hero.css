@@ -2,17 +2,13 @@
 .hero {
   margin: 0;
   font-family: "Avenir";
-
-  margin-bottom: 6rem;
 }
 
-.slider {
+ .slider {
   width: 100%;
   max-width: 100vw;
-  height: 700px;
   margin: auto;
-  position: relative;
-}
+  position: relative;}
 
 .item {
   width: 100vw;
@@ -73,7 +69,6 @@
 
 .hero-h1 {
     font-family: "Klavika";
-    font-size: 3rem;
 
     color: white;
 }
@@ -81,7 +76,6 @@
 .hero-h2 {
     font-family: "Klavika";
     font-weight: 200;
-    font-size: 1.8rem;
 
     color: white;
 
@@ -157,8 +151,38 @@
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
+  .hero {
+    margin-bottom: 6rem;
+  }
+  
+  .slider {
+ height: 700px;
+}
+
+.hero-h1 {
+  font-size: 3rem;
+}
+
+.hero-h2{
+  font-size: 1.8rem;
+}
 }
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
+  .hero {
+    margin-bottom: 3rem;
+  }
+  
+  .slider {
+  height: 500px;
+}
+
+.hero-h1 {
+  font-size: 2rem;
+}
+
+.hero-h2{
+  font-size: 1.5rem;
+}
 }
