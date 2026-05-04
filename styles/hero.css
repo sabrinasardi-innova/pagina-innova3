@@ -2,6 +2,8 @@
 .hero {
   margin: 0;
   font-family: "Avenir";
+
+  margin-bottom: 6rem;
 }
 
 .slider {
