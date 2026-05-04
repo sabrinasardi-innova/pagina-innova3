@@ -4,7 +4,7 @@ const showMenu = () => {
   const toggle = document.getElementById("nav__toggle");
   const nav = document.getElementById("nav-menu");
 
-  // TOGGLE 
+  // TOGGLE
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show-menu");
@@ -21,7 +21,7 @@ const showMenu = () => {
     if (dropdownButton) {
       // EN DESKTOP IGNORA CLICKS
       dropdownButton.addEventListener("click", () => {
-        if (window.innerWidth > 1119) return; 
+        if (window.innerWidth > 1119) return;
         // SI SE ABRE UN NUEVO DROPDOWN CIERRA EL ANTERIOR
         const openDropdown = document.querySelector(".show-dropdown");
 
@@ -35,18 +35,18 @@ const showMenu = () => {
   });
 
   // AL REDIMENSIONAR LA VENTANA LIMPIA EL ESTADO DEL MENÚ
-  window.addEventListener ("resize", () => {
+  window.addEventListener("resize", () => {
     if (window.innerWidth >= 1119) {
       if (nav) {
-        nav.classList.remove ("show-menu");  
+        nav.classList.remove("show-menu");
       }
       if (toggle) {
-        toggle.classList.remove ("show-icon");
+        toggle.classList.remove("show-icon");
       }
-      document.querySelectorAll (".show-dropdown").forEach((item) => {
+      document.querySelectorAll(".show-dropdown").forEach((item) => {
         const container = item.querySelector(".dropdown__container");
         if (container) container.style.height = "0px";
-        item.classList.remove("show-dropdown"); 
+        item.classList.remove("show-dropdown");
       });
     }
   });
@@ -71,7 +71,6 @@ const toggleItem = (item) => {
 const headerPlaceholder = document.getElementById("header-placeholder");
 
 if (headerPlaceholder) {
-  
   const fetches = [
     fetch("header.html")
       .then((res) => res.text())
@@ -83,18 +82,66 @@ if (headerPlaceholder) {
   const footerPlaceholder = document.getElementById("footer-placeholder");
   if (footerPlaceholder) {
     fetches.push(
-    fetch("footer.html")
-      .then((res) => res.text())
-      .then((html) => {
-        footerPlaceholder.innerHTML = html;
-      }),
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          footerPlaceholder.innerHTML = html;
+        }),
     );
   }
-  
+
   Promise.all(fetches)
     .then(showMenu)
     .catch((error) => console.error("Error:", error));
 } else {
-
   document.addEventListener("DOMContentLoaded", showMenu);
 }
+
+// --- FUNCIÓN SLIDER HERO
+
+let list = document.querySelector(".slider .list");
+let items = document.querySelectorAll(".slider .list .item");
+let dots = document.querySelectorAll(".slider .dots li");
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
+
+let active = 0;
+let lengthItems = items.length - 1;
+
+next.onclick = function () {
+  if (active + 1 > lengthItems) {
+    active = 0;
+  } else {
+    active = active + 1;
+  }
+  reloadSlider();
+};
+
+prev.oneclick = function () {
+  if (active - 1 < 0) {
+    active = lengthItems;
+  } else {
+    active = active - 1;
+  }
+  reloadSlider();
+};
+
+let refreshSlider = setInterval(() => {next.click()}, 3000);
+
+function reloadSlider() {
+  let checkLeft = items[active].offsetLeft;
+  list.style.left = -checkLeft + "px";
+
+  let lastActiveDot = document.querySelector(".slider .dots li.active");
+  lastActiveDot.classList.remove("active");
+  dots[active].classList.add("active");
+  clearInterval(refreshSlider);
+  refreshSlider = setInterval(() => {next.click()}, 3000);
+}
+
+dots.forEach((li, key) => {
+  li.addEventListener('click', function (){
+    active = key;
+    reloadSlider();
+  })
+})
