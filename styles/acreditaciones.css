@@ -1,0 +1,31 @@
+/* BASE */
+.container-acreditaciones {
+    display: block;
+}
+
+.talento {
+    display: flex;
+}
+
+.institucional {
+    display: flex;
+}
+
+.fondo-amarillo {
+    background: linear-gradient(to right, #ffa041, #ffc52e);
+}
+
+.fondo-azul {
+    background: linear-gradient(to right, #0377a8, #3db3e3);
+} 
+
+
+/* DESKTOP */
+@media screen and (min-width: 1119px) {
+
+}
+
+/* NAV MOBILE */
+@media screen and (max-width: 1118px) {
+
+}
