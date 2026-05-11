@@ -1,4 +1,8 @@
 /* BASE */
+body {
+  overflow-x: hidden;
+}
+
 .h1-servicios {
   margin-top: 0;
 }
@@ -8,9 +12,6 @@
   font-size: 1.3rem;
   color: #363735;
   font-weight: 500;
-
-  margin: 0;
-  padding: 0.5rem 1rem 0 1rem;
 }
 
 .servicios-link {
@@ -41,9 +42,32 @@
   border-radius: 1.5rem;
 }
 
+.cv-servicios {
+    background: linear-gradient(to right, #ffa041, #ffc52e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: block;
+  margin: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 /* DESKTOP */
 @media screen and (min-width: 1119px) {
-.servicios-grid {
+.h2-servicios {
+margin: 0;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+    .servicios-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -80,23 +104,8 @@
 }
 
 .cv-servicios {
-    background: linear-gradient(to right, #ffa041, #ffc52e);
-  color: white;
-  border: none;
-  border-radius: 10px;
-
-  font-family: "Avenir";
-  font-size: 1.2rem;
-  font-weight: 600;
 
   cursor: pointer;
-
-  display: block;
-  margin: auto;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 
   transition: all 0.5s ease;
 }
@@ -109,18 +118,52 @@
 
 /* NAV MOBILE */
 @media screen and (max-width: 1118px) {
-.contenedor-servicio {
-  display: block;
+
+.h2-servicios {
+    padding: 0.5rem;
+} 
+.carrusel {
+    margin: 2rem auto;
+    width: 90%;
+    border: 5px solid none;
+    display: flex;
+    overflow-x: auto;
+}
+
+    .servicios-grid {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 1em;
+}
+
+    .contenedor-servicio {
+  flex: 0 0 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 6s linear;
 
   background: #f5f5f5;
   border: 1px solid #d3d3d3;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.9rem;
 
-  height: 100%;
-
-  row-gap: 0.5rem;
-
-  align-items: center;
+  min-width: 300px;
+  height: 430px;
 }
+
+.cv-servicios {
+  margin-top: 1rem;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes spin {
+from {translate: 0;}
+to {translate: -100%;}
+}
+
 }
