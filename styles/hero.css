@@ -152,7 +152,7 @@
 /* For desktop */
 @media screen and (min-width: 1119px) {
   .hero {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
   
   .slider {
