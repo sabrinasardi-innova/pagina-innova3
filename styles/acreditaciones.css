@@ -1,31 +1,59 @@
 /* BASE */
-.container-acreditaciones {
-    display: block;
-}
-
-.talento {
-    display: flex;
-}
-
-.institucional {
-    display: flex;
-}
-
 .fondo-amarillo {
-    background: linear-gradient(to right, #ffa041, #ffc52e);
+  background: linear-gradient(to right, #ffa041, #ffc52e);
 }
 
 .fondo-azul {
-    background: linear-gradient(to right, #0377a8, #3db3e3);
-} 
-
+  background: linear-gradient(to right, #0377a8, #3db3e3);
+}
 
 /* DESKTOP */
 @media screen and (min-width: 1119px) {
+  .columna-acreditacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .contenedor-img-acreditaciones {
+  height: 400px;
+  overflow: hidden;
+}
+
+  .imagen-acreditaciones {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+  .talento {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+
+  width: 100%;
+}
+
+.institucional {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+
+  width: 100%;
+}
+
+.contenido-acreditacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+}
 }
 
 /* NAV MOBILE */
 @media screen and (max-width: 1118px) {
-
 }
