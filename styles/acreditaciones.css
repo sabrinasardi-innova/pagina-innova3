@@ -1,34 +1,52 @@
 /* BASE */
 .fondo-amarillo {
   background: linear-gradient(to right, #ffa041, #ffc52e);
+
+  display: flex;
 }
 
 .fondo-azul {
   background: linear-gradient(to right, #0377a8, #3db3e3);
+
+  display: flex;
 }
 
-/* DESKTOP */
-@media screen and (min-width: 1119px) {
-  .columna-acreditacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenedor-img-acreditaciones {
-  height: 400px;
-  overflow: hidden;
-}
-
-  .imagen-acreditaciones {
+.fondo-amarillo,
+.fondo-azul {
   width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  display: block;
+  box-sizing: border-box;
 }
 
-  .talento {
+.h1-talento,
+.h1-institucional {
+  font-size: 2rem;
+  gap: 0;
+}
+
+.h3-acreditaciones {
+  font-family: "Avenir";
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #767774;
+
+  border-top: 1px solid #e0e0e0;
+
+  line-height: 1;
+
+  width: 140px;
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+
+.columna-acreditacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.talento {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
@@ -48,12 +66,127 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  gap: 1.5rem;
+  height: 100%;
+  padding: 1rem 0;
 }
+
+.container-IMT,
+.container-AI,
+.container-AMAAC,
+.container-EMA {
+  background-color: white;
+  border-radius: 1rem;
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-EMA {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cont-img-fondo,
+.cont-img-fondo-ema {
+  width: 180px;
+}
+
+.img-fondo {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+.cont-img-fondo {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fondo,
+.img-fondo-ema {
+  margin-bottom: 0.6rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1119px) {
+  .container-acreditaciones {
+    margin-bottom: 4rem;
+  }
+
+  .contenedor-img-acreditaciones {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .fondo-amarillo {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    justify-content: flex-start;
+  }
+
+  .fondo-azul {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    justify-content: flex-end;
+  }
+
+  .fondo-amarillo,
+  .fondo-azul {
+    margin: 0;
+    padding: 1.5rem 3rem;
+  }
+
+  .imagen-acreditaciones {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+  }
+
+  .container-IMT,
+  .container-AI,
+  .container-AMAAC,
+  .container-EMA {
+    width: 220px;
+    margin: 0.5rem;
+  }
+
+  .talento {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /* NAV MOBILE */
 @media screen and (max-width: 1118px) {
+  .container-acreditaciones {
+    margin-bottom: 2rem;
+  }
+
+  .contenedor-img-acreditaciones {
+    display: none;
+  }
+
+  .container-IMT,
+  .container-AI,
+  .container-AMAAC,
+  .container-EMA {
+    width: 200px;
+    margin: 0.5rem;
+  }
+
+  .fondo-amarillo,
+  .fondo-azul {
+    border-radius: 0.8rem;
+  }
 }
