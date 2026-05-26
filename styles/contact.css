@@ -1,0 +1,19 @@
+/* For desktop */
+@media screen and (min-width: 1119px){
+.contacto {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 0;
+
+    margin-bottom: 0;
+}
+}
+
+/* NAV MOBILE*/
+@media screen and (max-width: 1118px){
+    .contacto {
+    margin-top: 5rem;
+}
+}

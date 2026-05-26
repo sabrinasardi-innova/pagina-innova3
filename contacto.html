@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Innova3 - Contacto</title>
+
+    <link
+      class="icon"
+      rel="icon"
+      type="image/png"
+      href="imágenes/iconAsset 3-8.png"
+    />
+
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/homecontact.css" />
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <div class="contacto">
+      <h1 class="contacto-h1">CONTÁCTANOS</h1>
+
+      <div class="contacto-container">
+        <div class="formularios">
+          <div class="formulario-contenido">
+            <form id="contact-form" action="">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" required />
+              </div>
+
+              <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="Apellidos" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="text" id="email" name="Email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="motivo">Motivo</label>
+                <input
+                  type="text"
+                  name="motivo"
+                  id="motivo"
+                  placeholder="Cotización, vacante, queja..."
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje corto</label>
+                <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+              </div>
+
+              <div class="form-group-terms">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">
+                  Acepto los
+                  <span class="terms-link">términos y condiciones</span> y la
+                  <span class="terms-link">política de privacidad</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="ENVIAR" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="contacto-info">
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6070198119737!2d-98.29850652482273!3d19.08100825181534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6d6c746b951%3A0x953a60aa00ed39cd!2sInnova%20Pavimentos%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1776212767780!5m2!1ses!2smx"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="info">
+            <div class="direccion-texto">
+              <h3>Dirección:</h3>
+              <p>
+                Carretera estatal Coronango Ext. 303. Col. Cuautlancingo. Puebla
+                Pue. C.P: 72705
+              </p>
+
+              <div class="cel-mail">
+                <div class="contact-p">
+                  <h3>Ventas:</h3>
+                  <p class="datos-contacto">+52 (222) 627 9265</p>
+                  <p class="datos-contacto">ventas@innova3.com.mx</p>
+                </div>
+
+                <div class="contact-p">
+                  <h3>Vacantes:</h3>
+                  <p class="datos-contacto">+52 (222) 627 9259</p>
+                  <p class="datos-contacto">capital.humano@innova3.com.mx</p>
+                </div>
+
+                <div class="contact-p">
+                  <h3>Proveedores:</h3>
+                  <p class="datos-contacto">+52 (222) 627 9254</p>
+                  <p class="datos-contacto"></p>
+                </div>
+
+                <div class="contact-p">
+                  <h3>Quejas y Sugerencias:</h3>
+                  <p class="datos-contacto">+52 (222) 709 0003</p>
+                  <p class="datos-contacto">sgc@innova3.com.mx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
