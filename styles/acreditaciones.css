@@ -151,6 +151,7 @@
 
     object-fit: cover;
     display: block;
+      border-radius: 10px;
   }
 
   .container-IMT,
