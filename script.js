@@ -146,9 +146,7 @@ dots.forEach((li, key) => {
   })
 })
 
- // --- SECCIÓN 2: LÓGICA DE LAS PESTAÑAS ---
-
- if (prev && next) {
+     // --- SECCIÓN 2: LÓGICA DE LAS PESTAÑAS (sin cambios) ---
     const tabSection = document.querySelector('.page-tab-section');
     const tabLinks = document.querySelectorAll('.tab-list a');
 
@@ -170,10 +168,20 @@ dots.forEach((li, key) => {
     }
 
     tabLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-        console.log("CLICK");
-        event.preventDefault();
-        switchTab(this);
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            switchTab(this);
         });
     });
-  }
+
+    // --- SECCIÓN 3: ACTIVAR PESTAÑA DESDE URL (sin cambios) ---
+    function activateTabFromHash() {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetLink = document.querySelector(`.tab-list a[href="${hash}"]`);
+            if (targetLink) {
+                setTimeout(() => { switchTab(targetLink); }, 100);
+            }
+        }
+    }
+    activateTabFromHash();
