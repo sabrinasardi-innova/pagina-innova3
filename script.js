@@ -145,3 +145,35 @@ dots.forEach((li, key) => {
     reloadSlider();
   })
 })
+
+ // --- SECCIÓN 2: LÓGICA DE LAS PESTAÑAS ---
+
+ if (prev && next) {
+    const tabSection = document.querySelector('.page-tab-section');
+    const tabLinks = document.querySelectorAll('.tab-list a');
+
+    function switchTab(link) {
+        const targetPanelId = link.getAttribute('href');
+        const targetPanel = document.querySelector(targetPanelId);
+
+        if (targetPanel && link) {
+            document.querySelectorAll('.tab-list li.active').forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('.tab-panel.active').forEach(item => item.classList.remove('active'));
+            
+            link.parentElement.classList.add('active');
+            targetPanel.classList.add('active');
+
+            if (tabSection) {
+                tabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }
+
+    tabLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        console.log("CLICK");
+        event.preventDefault();
+        switchTab(this);
+        });
+    });
+  }

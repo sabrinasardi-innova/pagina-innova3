@@ -78,6 +78,14 @@
   border: #cccccc solid 1px;
 }
 
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
 
 .h3-servicios-pag {
