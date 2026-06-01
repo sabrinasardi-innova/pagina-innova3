@@ -1,0 +1,163 @@
+/*BASE*/
+
+/* PORTADA */
+.portada {
+  position: relative;
+}
+
+.foto-portada {
+  margin-top: var(--header-height);
+  width: 100%;
+  height: clamp(200px, 25vw, 390px);
+  overflow: hidden;
+
+  margin-bottom: 0;
+}
+
+.foto-portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-portada-contenedor {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  width: 80%;
+}
+
+.h1-servicios-pag {
+  color: white;
+
+  font-family: "Klavika";
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4rem);
+
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.h2-servicios-pag {
+  color: white;
+
+  font-family: "Klavika";
+  font-weight: 300;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.foto-portada::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* MENÚ */
+
+.tab-list {
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  color: #363735;
+  font-weight: 300;
+
+  list-style: none;
+  padding-top: 1rem;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  padding-bottom: 1rem;
+
+  border: #cccccc solid 1px;
+}
+
+/* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
+
+.h3-servicios-pag {
+  color: #767774;
+
+  font-family: "Avenir";
+  font-weight: 500;
+  font-size: 1.3rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.tab-list a {
+  text-decoration: none;
+  color: #363735;
+}
+
+.p-servicios-pag {
+  font-family: "Avenir";
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  color: #363735;
+
+  margin-top: 0;
+
+  text-align: justify;
+}
+
+.ind-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* For desktop */
+@media screen and (min-width: 1119px) {
+}
+
+.content {
+  padding-inline: clamp(20px, 5vw, 100px);
+  padding-bottom: 0;
+}
+
+.ind-container {
+  gap: 5rem;
+}
+
+.gif-container {
+  max-width: clamp(250px, 30vw, 400px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tab-list li {
+  position: relative;
+}
+
+.tab-list li:hover {
+  font-weight: 500;
+}
+
+.tab-list li.active::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -12px;
+
+  height: 2px;
+  background: #363735;
+}
+
+.tab-panel-text {
+    margin-top: 2rem;
+}
+
+/* NAV MOBILE*/
+@media screen and (max-width: 1118px) {
+}
