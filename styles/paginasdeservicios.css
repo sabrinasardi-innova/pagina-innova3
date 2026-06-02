@@ -132,6 +132,15 @@
   border-radius: 15px;
 }
 
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
 }
@@ -181,7 +190,7 @@
 
 /* CONTENIDO NUESTROS EQUIPOS */
 
-.equipos-container {
+.equipo {
   display: flex;
 
   margin-top: 3rem;
@@ -193,10 +202,30 @@
   flex: 1;
 
   padding-right: 3rem;
+  padding-top: 1.2rem;
 }
 
 .img-equipo {
   flex: 1;
+}
+
+.IMT {
+  width: 120px;
+
+  margin: 2rem;
+}
+
+.pave-doctor {
+  height: 120px;
+
+  margin: 2rem;
+}
+
+.texto-equipo-der {
+  flex: 1;
+
+  padding-left: 3rem;
+  padding-top: 1.2rem;
 }
 
 /* NAV MOBILE*/
