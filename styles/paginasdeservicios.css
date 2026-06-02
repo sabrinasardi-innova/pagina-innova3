@@ -79,11 +79,11 @@
 }
 
 .tab-panel {
-    display: none;
+  display: none;
 }
 
 .tab-panel.active {
-    display: block;
+  display: block;
 }
 
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
@@ -107,10 +107,12 @@
   font-family: "Avenir";
   font-weight: 300;
   font-size: 1.2rem;
+  line-height: 1.2;
 
   color: #363735;
 
   margin-top: 0;
+  margin-bottom: 1.2rem;
 
   text-align: justify;
 }
@@ -120,10 +122,21 @@
   justify-content: center;
 }
 
+/* CONTENIDO NUESTROS EQUIPOS */
+
+.img-equipo img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 15px;
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
 }
 
+/* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
 .content {
   padding-inline: clamp(20px, 5vw, 100px);
   padding-bottom: 0;
@@ -163,7 +176,27 @@
 }
 
 .tab-panel-text {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+/* CONTENIDO NUESTROS EQUIPOS */
+
+.equipos-container {
+  display: flex;
+
+  margin-top: 3rem;
+
+  padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.texto-equipo-izq {
+  flex: 1;
+
+  padding-right: 3rem;
+}
+
+.img-equipo {
+  flex: 1;
 }
 
 /* NAV MOBILE*/
