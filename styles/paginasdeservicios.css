@@ -117,6 +117,11 @@
   text-align: justify;
 }
 
+.gif {
+  background-color: #d5e9f8;
+  border-radius: 50%;
+}
+
 /* CONTENIDO NUESTROS EQUIPOS */
 
 .img-equipo img {
@@ -196,6 +201,17 @@
   align-items: center;
   text-align: center;
 }
+
+.gif {
+    width: clamp(250px, 10vw, 300px);
+    height: clamp(250px, 10vw, 300px);
+
+    margin-bottom: 2rem;
+  }
+
+  .estructural {
+     width: clamp(250px, 10vw, 350px);
+  }
 
 .tab-list li {
   position: relative;
@@ -295,6 +311,11 @@
 .gif-container {
   margin: auto;
 }
+
+.gif {
+    width: clamp(160px, 10vw, 230px);
+    height: clamp(160px, 10vw, 230px);
+  }
 
 /* CONTENIDO NUESTROS EQUIPOS */
 
