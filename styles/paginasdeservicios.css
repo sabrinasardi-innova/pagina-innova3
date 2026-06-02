@@ -117,14 +117,17 @@
   text-align: justify;
 }
 
-.ind-container {
-  display: flex;
-  justify-content: center;
-}
-
 /* CONTENIDO NUESTROS EQUIPOS */
 
 .img-equipo img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 15px;
+}
+
+.img-equipo-2 img {
   width: 100%;
   height: auto;
   display: block;
@@ -141,6 +144,33 @@
   font-style: italic;
 }
 
+.ficha-tecnica {
+  background: linear-gradient(to right, #ffa041, #ffc52e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: block;
+  margin: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  transition: all 0.5s ease;
+}
+
+.ficha-tecnica:hover {
+  background: linear-gradient(to right, #0377a8, #3db3e3);
+  cursor: pointer;
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
 }
@@ -152,6 +182,9 @@
 }
 
 .ind-container {
+  display: flex;
+  justify-content: center;
+
   gap: 5rem;
 }
 
@@ -194,6 +227,16 @@
   display: flex;
 
   margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.equipo-primera-fila, 
+.equipo-segunda-fila {
+  display: flex;
+
+  margin-top: 1rem;
 
   padding-inline: clamp(20px, 5vw, 100px);
 }
@@ -205,7 +248,8 @@
   padding-top: 1.2rem;
 }
 
-.img-equipo {
+.img-equipo,
+.img-equipo-2 {
   flex: 1;
 }
 
@@ -221,6 +265,12 @@
   margin: 2rem;
 }
 
+.skid-doctor {
+  height: 100px;
+
+  margin: 2rem;
+}
+
 .texto-equipo-der {
   flex: 1;
 
@@ -230,4 +280,92 @@
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
+
+.h3-servicios-pag {
+  margin-top: 1rem;
+}
+
+/* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
+
+.ind-container {
+  display: block;
+  margin: auto;
+}
+
+.gif-container {
+  margin: auto;
+}
+
+/* CONTENIDO NUESTROS EQUIPOS */
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0;
+  margin-bottom: 3rem;
+
+  padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.texto-equipo-izq {
+  margin: 0;
+  padding: 0;
+}
+
+.texto-equipo-der {
+  margin: 0;
+  padding: 0;
+}
+
+.texto-equipo-izq,
+  .texto-equipo-der {
+    order: 2;
+  }
+
+  .img-equipo {
+    order: 1;
+  }
+
+  .IMT {
+  width: 100px;
+
+  margin: 1rem;
+}
+
+.pave-doctor {
+  height: 90px;
+
+  margin: 1rem;
+}
+
+.equipo-primera-fila {
+  display: flex;
+  flex-direction: column;
+
+margin-bottom: 1rem;
+
+padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.equipo-segunda-fila {
+  margin-bottom: 2rem;
+
+  padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.img-equipo-2 img {
+  display: none;
+}
+
+.skid-doctor {
+  height: 90px;
+
+  margin: 1rem;
+}
+
+.ficha-tecnica{
+  margin-top: 1rem;
+}
+
 }
