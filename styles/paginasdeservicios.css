@@ -213,6 +213,10 @@
      width: clamp(250px, 10vw, 350px);
   }
 
+  .gpr-gif {
+     width: clamp(270px, 10vw, 350px);
+  }
+
 .tab-list li {
   position: relative;
 }
