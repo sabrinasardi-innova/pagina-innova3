@@ -120,6 +120,10 @@
 .gif {
   background-color: #d5e9f8;
   border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CONTENIDO NUESTROS EQUIPOS */
@@ -203,19 +207,21 @@
 }
 
 .gif {
-    width: clamp(250px, 10vw, 300px);
-    height: clamp(250px, 10vw, 300px);
+  width: clamp(250px, 10vw, 300px);
+  height: clamp(250px, 10vw, 300px);
 
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+}
 
-  .estructural {
-     width: clamp(250px, 10vw, 350px);
-  }
+.estructural {
+  width: clamp(250px, 10vw, 350px);
+}
 
-  .gpr-gif {
-     width: clamp(270px, 10vw, 350px);
-  }
+.viapps-gif {
+  width: clamp(380px, 10vw, 480px);
+
+  padding-bottom: 1rem;
+}
 
 .tab-list li {
   position: relative;
@@ -252,7 +258,7 @@
   padding-inline: clamp(20px, 5vw, 100px);
 }
 
-.equipo-primera-fila, 
+.equipo-primera-fila,
 .equipo-segunda-fila {
   display: flex;
 
@@ -300,50 +306,60 @@
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
-
-.h3-servicios-pag {
-  margin-top: 1rem;
-}
-
-/* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
-
-.ind-container {
-  display: block;
-  margin: auto;
-}
-
-.gif-container {
-  margin: auto;
-}
-
-.gif {
-    width: clamp(160px, 10vw, 230px);
-    height: clamp(160px, 10vw, 230px);
+  .h3-servicios-pag {
+    margin-top: 1rem;
   }
 
-/* CONTENIDO NUESTROS EQUIPOS */
+  /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
 
-.equipo {
-  display: flex;
-  flex-direction: column;
+  .ind-container {
+    display: block;
+    margin: auto;
+  }
 
-  margin-top: 0;
-  margin-bottom: 3rem;
+  .gif-container {
+    margin: 1rem auto;
+  }
 
-  padding-inline: clamp(20px, 5vw, 100px);
+  .gif {
+    width: clamp(160px, 10vw, 230px);
+    height: clamp(160px, 10vw, 230px);
+
+    margin-bottom: 0.5rem;
+  }
+
+  .estructural {
+  width: clamp(180px, 10vw, 280px);
 }
 
-.texto-equipo-izq {
-  margin: 0;
-  padding: 0;
+.viapps-gif {
+  width: clamp(250px, 10vw, 380px);
 }
 
-.texto-equipo-der {
-  margin: 0;
-  padding: 0;
-}
 
-.texto-equipo-izq,
+  /* CONTENIDO NUESTROS EQUIPOS */
+
+  .equipo {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+    padding-inline: clamp(20px, 5vw, 100px);
+  }
+
+  .texto-equipo-izq {
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto-equipo-der {
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto-equipo-izq,
   .texto-equipo-der {
     order: 2;
   }
@@ -353,44 +369,43 @@
   }
 
   .IMT {
-  width: 100px;
+    width: 100px;
 
-  margin: 1rem;
-}
+    margin: 1rem;
+  }
 
-.pave-doctor {
-  height: 90px;
+  .pave-doctor {
+    height: 90px;
 
-  margin: 1rem;
-}
+    margin: 1rem;
+  }
 
-.equipo-primera-fila {
-  display: flex;
-  flex-direction: column;
+  .equipo-primera-fila {
+    display: flex;
+    flex-direction: column;
 
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 
-padding-inline: clamp(20px, 5vw, 100px);
-}
+    padding-inline: clamp(20px, 5vw, 100px);
+  }
 
-.equipo-segunda-fila {
-  margin-bottom: 2rem;
+  .equipo-segunda-fila {
+    margin-bottom: 2rem;
 
-  padding-inline: clamp(20px, 5vw, 100px);
-}
+    padding-inline: clamp(20px, 5vw, 100px);
+  }
 
-.img-equipo-2 img {
-  display: none;
-}
+  .img-equipo-2 img {
+    display: none;
+  }
 
-.skid-doctor {
-  height: 90px;
+  .skid-doctor {
+    height: 90px;
 
-  margin: 1rem;
-}
+    margin: 1rem;
+  }
 
-.ficha-tecnica{
-  margin-top: 1rem;
-}
-
+  .ficha-tecnica {
+    margin-top: 1rem;
+  }
 }
