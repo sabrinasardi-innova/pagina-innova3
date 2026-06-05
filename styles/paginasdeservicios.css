@@ -48,6 +48,8 @@
   font-family: "Klavika";
   font-weight: 300;
   font-size: clamp(1.2rem, 2vw, 2rem);
+
+  margin-bottom: 3rem;
 }
 
 .foto-portada::after {
@@ -180,13 +182,35 @@
   cursor: pointer;
 }
 
+/* LISTAS */
+
+.lista {
+  list-style-type: "❯❯❯❯";
+  margin-left: 2rem;
+}
+
+.lista li {
+  padding-left: 1rem;
+}
+
+/* PAVIMENTOS AEROPORTUARIOS */
+
+.gif-pci {
+  background-color: #d5e9f8;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
 }
 
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
 .content {
-  padding-inline: clamp(20px, 5vw, 100px);
+  padding-inline: clamp(90px, 5vw, 180px);
   padding-bottom: 0;
 }
 
@@ -255,7 +279,7 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 
-  padding-inline: clamp(20px, 5vw, 100px);
+  padding-inline: 0;
 }
 
 .equipo-primera-fila,
@@ -304,6 +328,34 @@
   padding-top: 1.2rem;
 }
 
+/* PAVIMENTOS AEROPORTUARIOS*/
+
+.gif-container-pci {
+  max-width: clamp(200px, 10vw, 300px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ .gif-pci {
+    width: clamp(180px, 10vw, 280px);
+    height: clamp(180px, 10vw, 280px);
+
+    margin-bottom: 0.5rem;
+  }
+
+.pcr-pci {
+  flex: 1;
+
+  padding-left: 3rem;
+}
+
+.pci {
+  width: clamp(230px, 10vw, 330px);
+}
+
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
   .h3-servicios-pag {
@@ -328,14 +380,14 @@
     margin-bottom: 0.5rem;
   }
 
-  .estructural {
-  width: clamp(180px, 10vw, 280px);
-}
+  .estructural,
+  .pci {
+    width: clamp(180px, 10vw, 280px);
+  }
 
-.viapps-gif {
-  width: clamp(250px, 10vw, 380px);
-}
-
+  .viapps-gif {
+    width: clamp(250px, 10vw, 380px);
+  }
 
   /* CONTENIDO NUESTROS EQUIPOS */
 
