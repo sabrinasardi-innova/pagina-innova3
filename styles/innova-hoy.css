@@ -147,15 +147,15 @@
   }
 
   .h3-innova-hoy {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .combinamos {
-    gap: 1.5rem;
+    gap: 1.3rem;
   }
 
   .gif {
-    width: clamp(130px, 10vw, 200px);
-    height: clamp(130px, 10vw, 200px);
+    width: clamp(110px, 5vw, 180px);
+    height: clamp(110px, 5vw, 180px);
   }
 }

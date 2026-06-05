@@ -1,6 +1,7 @@
 /* BASE */
 .h1-servicios {
   margin-top: 0;
+  font-size: 2rem;
 }
 
 .h2-servicios {
@@ -118,6 +119,7 @@
 
 /* NAV MOBILE */
 @media screen and (max-width: 1118px) {
+  
   .h2-servicios {
     padding: 0.5rem;
   }

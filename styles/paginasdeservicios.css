@@ -68,12 +68,12 @@
 
   list-style: none;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0;
 
   display: flex;
   justify-content: center;
-
-  padding-bottom: 1rem;
+  align-items: stretch;
 
   border: #cccccc solid 1px;
 }
@@ -371,6 +371,12 @@
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
+
+  .content {
+  padding-inline: clamp(30px, 5vw, 90px);
+  padding-bottom: 0;
+}
+
   /* MENÚ */
 
   .tab-list {
