@@ -63,7 +63,6 @@
 
 .tab-list {
   font-family: "Avenir";
-  font-size: 1.2rem;
   color: #363735;
   font-weight: 300;
 
@@ -73,7 +72,6 @@
 
   display: flex;
   justify-content: center;
-  gap: 5rem;
 
   padding-bottom: 1rem;
 
@@ -86,6 +84,14 @@
 
 .tab-panel.active {
   display: block;
+}
+
+.tab-list li {
+  flex: 1;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
 }
 
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
@@ -206,6 +212,13 @@
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
+}
+
+/* MENÚ */
+
+.tab-list {
+  font-size: 1.2rem;
+  gap: 4rem;
 }
 
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
@@ -339,12 +352,12 @@
   text-align: center;
 }
 
- .gif-pci {
-    width: clamp(180px, 10vw, 280px);
-    height: clamp(180px, 10vw, 280px);
+.gif-pci {
+  width: clamp(180px, 10vw, 280px);
+  height: clamp(180px, 10vw, 280px);
 
-    margin-bottom: 0.5rem;
-  }
+  margin-bottom: 0.5rem;
+}
 
 .pcr-pci {
   flex: 1;
@@ -358,11 +371,20 @@
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
-  .h3-servicios-pag {
-    margin-top: 1rem;
+  /* MENÚ */
+
+  .tab-list {
+    font-size: 1rem;
+    gap: 2rem;
+
+    padding-inline: 2rem;
   }
 
   /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
+
+  .h3-servicios-pag {
+    margin-top: 1rem;
+  }
 
   .ind-container {
     display: block;
