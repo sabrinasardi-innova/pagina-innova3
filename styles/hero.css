@@ -175,6 +175,7 @@
 @media screen and (max-width: 1118px) {
   .hero {
     margin-bottom: 3rem;
+    margin-top: 0;
   }
   
   .slider {
@@ -187,5 +188,10 @@
 
 .hero-h2{
   font-size: 1.5rem;
+}
+
+.flecha-next,
+.flecha-prev {
+  display: none;
 }
 }

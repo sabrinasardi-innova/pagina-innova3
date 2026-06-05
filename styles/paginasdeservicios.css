@@ -6,7 +6,6 @@
 }
 
 .foto-portada {
-  margin-top: var(--header-height);
   width: 100%;
   height: clamp(200px, 25vw, 390px);
   overflow: hidden;
@@ -219,6 +218,12 @@
 .tab-list {
   font-size: 1.2rem;
   gap: 4rem;
+}
+
+/* PORTADA */
+
+.foto-portada {
+  margin-top: 40px;
 }
 
 /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */

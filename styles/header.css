@@ -107,7 +107,7 @@ a {
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: auto;
-    padding-block: 0rem 4rem;
+    padding-block: 0 4rem;
     pointer-events: none;
     opacity: 0;
     transition:
@@ -249,7 +249,7 @@ a {
 /* LANGUAGE */
 
 .lang-container {
-    background-color: #fafafa;
+  background-color: #fafafa;
 
   display: flex;
   justify-content: center;
@@ -268,20 +268,20 @@ a {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   padding-top: 0.2rem;
-  padding-bottom: 0.2rem ;
+  padding-bottom: 0.2rem;
   flex-shrink: 0;
 
   margin-left: 0.5rem;
 
-  border:#767774 solid 0.1rem;
+  border: #767774 solid 0.1rem;
   border-radius: 0;
 }
 
 .lang-button:hover {
-    border:#767774 solid 0.15rem;
-    font-weight: 600;
+  border: #767774 solid 0.15rem;
+  font-weight: 600;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* BREAKPOINTS */
@@ -308,7 +308,7 @@ a {
     opacity: 1;
     pointer-events: auto;
     top: 0;
-    
+
     display: flex;
     margin: auto;
     height: 100%;
@@ -439,24 +439,22 @@ a {
     margin-inline: auto;
   }
 
-.lang-container {
-  display: flex;
-  justify-content: center;
-  margin-left: 3rem;
-  padding: 0;
+  .lang-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    padding: 0;
 
-  background-color: #fafafa;
+    background-color: #fafafa;
 
-  gap: 0.5rem;
-}
+    gap: 0.5rem;
+  }
 
   .lang-button {
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem ;
-  margin:auto;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: auto;
   }
 }
-
-
