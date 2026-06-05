@@ -218,6 +218,8 @@
 .tab-list {
   font-size: 1.2rem;
   gap: 4rem;
+
+  padding-inline: 3.5rem;
 }
 
 /* PORTADA */
@@ -365,13 +367,21 @@
 }
 
 .pcr-pci {
+  display: flex;
   flex: 1;
 
   padding-left: 3rem;
+  gap: 4rem;
+
+  justify-content: center;
 }
 
 .pci {
   width: clamp(230px, 10vw, 330px);
+}
+
+.pcr {
+  height: clamp(205px, 10vw, 300px);
 }
 
 /* NAV MOBILE*/
