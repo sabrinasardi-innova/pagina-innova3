@@ -149,6 +149,39 @@ if (next && prev) {
   });
 }
 
+// --- SWIPE IMÁGENES HERO --- //
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.querySelector(".slider");
+
+if (slider) {
+  slider.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+
+    handleSwipe();
+  });
+}
+
+function handleSwipe() {
+  const threshold = 50; // sensibilidad
+
+  if (touchStartX - touchEndX > threshold) {
+    // swipe izquierda → siguiente slide
+    next.click();
+  }
+
+  if (touchEndX - touchStartX > threshold) {
+    // swipe derecha → slide anterior
+    prev.click();
+  }
+}
+
      // --- SECCIÓN 2: LÓGICA DE LAS PESTAÑAS (sin cambios) ---
     const tabSection = document.querySelector('.page-tab-section');
     const tabLinks = document.querySelectorAll('.tab-list a');
