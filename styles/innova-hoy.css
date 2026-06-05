@@ -155,7 +155,7 @@
   }
 
   .gif {
-    width: clamp(160px, 10vw, 230px);
-    height: clamp(160px, 10vw, 230px);
+    width: clamp(130px, 10vw, 200px);
+    height: clamp(130px, 10vw, 200px);
   }
 }
