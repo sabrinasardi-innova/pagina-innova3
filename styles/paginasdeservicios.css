@@ -248,7 +248,7 @@
 
   /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
   .content {
-    padding-inline: clamp(90px, 5vw, 180px);
+    padding-inline: clamp(110px, 10vw, 200px);
     padding-bottom: 0;
   }
 
