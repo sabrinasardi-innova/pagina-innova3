@@ -222,6 +222,10 @@
   line-height: 1.2;
 }
 
+.lista-bold {
+  font-weight: 500;
+}
+
 /* PAVIMENTOS AEROPORTUARIOS */
 
 .gif-pci {
@@ -440,6 +444,12 @@
 
     margin-top: 2rem;
   }
+
+  /* LISTAS */
+
+.lista {
+  width: 50%;
+}
 }
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
