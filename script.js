@@ -90,6 +90,17 @@ if (headerPlaceholder) {
     );
   }
 
+  const conoceemaPlaceholder = document.getElementById("conoce-ema-placeholder");
+  if (conoceemaPlaceholder) {
+    fetches.push(
+      fetch("conoceacreditaciones.html")
+        .then((res) => res.text())
+        .then((html) => {
+          conoceemaPlaceholder.innerHTML = html;
+        }),
+    );
+  }
+
   Promise.all(fetches)
     .then(showMenu)
     .catch((error) => console.error("Error:", error));

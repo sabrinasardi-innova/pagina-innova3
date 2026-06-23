@@ -2,6 +2,8 @@
 
 .container-conoce-ema {
   background-color: #fafafa;
+
+  margin-bottom: 0;
 }
 
 .h2-conoce-ema {
@@ -40,6 +42,11 @@ a {
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
+
+  .content-ema {
+    margin-left: 6rem;
+  }
+
   .container-conoce-ema {
     padding: 3rem;
     margin: 0;
