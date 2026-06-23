@@ -224,7 +224,6 @@
   font-family: "Avenir";
   font-weight: 300;
   font-size: 1.2rem;
-  line-height: 1.2;
 }
 
 .lista-bold {
@@ -256,6 +255,24 @@
 
   border-radius: 15px;
 }
+
+/* CONTROL DE CALIDAD */
+
+.boton-trenes {
+  background: linear-gradient(to right, #ffa041, #ffc52e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
@@ -465,9 +482,72 @@
   /* LISTAS */
 
 .lista {
-  width: 50%;
+  width: 65%;
+}
+
+.lista li {
+  line-height: 1.5;
+}
+
+/* CONTROL DE CALIDAD */
+.QC-trenes {
+  display: block;
+  margin-inline: auto;
+  max-width: 80%;
+  border-radius: 18px;
+}
+
+.contenedor-trenes {
+  position: relative;
+  margin: 0 auto;
+
+  width: fit-content;
+}
+
+.contenedor-trenes::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 0;
+
+  width: 80%;
+  height: 50%;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.80),
+    rgba(0, 0, 0, 0)
+  );
+
+  border-radius: 0 0 18px 18px;
+
+  pointer-events: none;
+
+  z-index: 1;
 }
 }
+
+.boton-trenes {
+  position: absolute;
+
+  bottom: 2rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.boton-trenes:hover {
+    background: linear-gradient(to right, #0377a8, #3db3e3);
+    cursor: pointer;
+  }
+
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
   .content {
