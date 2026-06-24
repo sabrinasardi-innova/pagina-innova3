@@ -170,6 +170,19 @@
   border-radius: 15px;
 }
 
+.img-equipo-4 {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.img-equipo-4 img {
+width: 600px;
+}
+
 .iconos {
   display: flex;
   justify-content: center;
