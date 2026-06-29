@@ -1,0 +1,217 @@
+/* BASE */
+
+/* PORTADA */
+.portada {
+  position: relative;
+}
+
+.foto-portada {
+  width: 100%;
+  height: clamp(200px, 25vw, 390px);
+  overflow: hidden;
+
+  margin-bottom: 0;
+}
+
+.foto-portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-portada-contenedor {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  width: 80%;
+}
+
+.h1-portada {
+  color: white;
+
+  font-family: "Klavika";
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4rem);
+
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.h2-portada {
+  color: white;
+
+  font-family: "Klavika";
+  font-weight: 300;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+
+  margin-bottom: 2rem;
+}
+
+.foto-portada::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* CONTENIDO */
+
+.h1-nosotros {
+  font-family: "Klavika";
+  font-weight: 600;
+  color: white;
+}
+
+.h2-valores {
+  font-family: "Klavika";
+  font-style: italic;
+  font-weight: 400;
+  color: #69676d;
+
+  border-top: #b1aeb6 1px solid;
+
+  letter-spacing: 0.5rem;
+}
+
+.p-nosotros {
+    font-family: "Avenir";
+    text-align: justify;
+}
+
+.p-valores {
+    font-family: "Avenir";
+    text-align: justify;
+}
+
+.mision {
+  background: #fdc526;
+}
+
+.vision {
+  background: #a0c5e1;
+}
+
+.valores {
+  background: #0c71a8;
+}
+
+.p-nosotros {
+  font-family: "Avenir";
+  font-weight: 300;
+}
+
+.card-valor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icono-valor {
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innovacion {
+  background-color: #fccc50;
+}
+
+.atencion {
+    background-color: #a0c5e1;
+}
+
+.respeto {
+    background-color: #45b4e4;
+}
+
+.equipo {
+    background-color: #0c71a8;
+}
+
+.responsabilidad {
+    background-color: #69676d;
+}
+
+.compromiso {
+    background-color: #ffa04a;
+}
+
+/* For desktop */
+@media screen and (min-width: 1119px) {
+  /* PORTADA */
+
+  .foto-portada {
+    margin-top: 40px;
+  }
+
+  /* CONTENIDO */
+  .content {
+    padding-inline: clamp(110px, 10vw, 200px);
+    padding-bottom: 0;
+    padding-top: 1.5rem;
+  }
+
+  .vision-mision-container {
+    display: flex;
+    gap: 4rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .contenedor-texto {
+    flex: 1;
+  }
+
+  .h1-nosotros {
+    font-size: 2.5rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 12rem;
+    height: 4rem;
+
+    margin: 1rem 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .h2-valores {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    padding-top: 1.5rem;
+
+    line-height: 1.1;
+  }
+
+  .p-nosotros {
+    font-size: 1.2rem;
+  }
+
+  .valores-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .icono-valor {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .icono-valor img {
+    width: 7rem;
+  }
+}
