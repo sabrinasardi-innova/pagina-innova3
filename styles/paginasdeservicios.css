@@ -227,16 +227,27 @@ width: 600px;
 /* LISTAS */
 
 .lista {
-  list-style-type: "❯❯❯❯";
-  margin-left: 2rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .lista li {
-  padding-left: 1rem;
+ position: relative;
+  padding-left: 2rem;
+}
 
-  font-family: "Avenir";
-  font-weight: 300;
-  font-size: 1.2rem;
+.lista li::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+
+  width: 1rem;
+  height: 1rem;
+
+  background: url("../imágenes/icono-bullet.svg") no-repeat center;
+  background-size: contain;
 }
 
 .lista-bold {
