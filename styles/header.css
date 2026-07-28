@@ -19,7 +19,12 @@ ul {
   list-style: none;
 }
 
-a {
+a,
+a:visited,
+a:hover,
+a:active,
+.abrir-tab {
+  color: #767774;
   text-decoration: none;
 }
 

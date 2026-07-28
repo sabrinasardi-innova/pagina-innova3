@@ -232,3 +232,20 @@ function handleSwipe() {
         }
     }
     activateTabFromHash();
+
+    // --- ABRIR PESTAÑAS DESDE ENLACES INTERNOS ---
+document.querySelectorAll(".abrir-tab").forEach(enlace => {
+    enlace.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const selector = this.dataset.tab;
+
+        const targetLink = document.querySelector(
+            `.tab-list a[href="${selector}"]`
+        );
+
+        if (targetLink) {
+            switchTab(targetLink);
+        }
+    });
+});
