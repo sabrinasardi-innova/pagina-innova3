@@ -191,6 +191,7 @@
 .iconos {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .iconos-2 {
@@ -239,6 +240,7 @@
 .lista li {
   position: relative;
   padding-left: 2rem;
+  color: #363735;
 }
 
 .lista li::before {
@@ -445,6 +447,12 @@
     margin: 0;
   }
 
+  .HP {
+     height: 60px;
+
+    margin: 2rem;
+  }
+
   .texto-equipo-der {
     flex: 1;
 
@@ -515,6 +523,7 @@
   }
 
   .lista li {
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
@@ -607,6 +616,10 @@
     margin-bottom: 1rem;
   }
 
+  .lista li {
+    font-size: 1.1rem;
+  }
+
   /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */
 
   .h3-servicios-pag {
@@ -679,6 +692,11 @@
     height: 90px;
 
     margin: 1rem;
+  }
+
+  .HP {
+    height: 50px;
+    margin-left: 1rem;
   }
 
   .equipo-primera-fila {
