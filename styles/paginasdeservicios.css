@@ -120,7 +120,8 @@
   color: #363735;
 }
 
-.p-servicios-pag {
+.p-servicios-pag,
+.p-servicios {
   font-family: "Avenir";
   font-weight: 300;
   font-size: 1.2rem;
@@ -132,6 +133,10 @@
   margin-bottom: 1.2rem;
 
   text-align: justify;
+}
+
+.p-servicios-pag {
+  max-width: 700px;
 }
 
 .gif {
@@ -180,7 +185,7 @@
 }
 
 .img-equipo-4 img {
-width: 600px;
+  width: 600px;
 }
 
 .iconos {
@@ -232,7 +237,7 @@ width: 600px;
 }
 
 .lista li {
- position: relative;
+  position: relative;
   padding-left: 2rem;
 }
 
@@ -296,7 +301,6 @@ width: 600px;
 
   z-index: 2;
 }
-
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
@@ -417,7 +421,7 @@ width: 600px;
     margin: 2rem;
   }
 
-   .IMT-2 {
+  .IMT-2 {
     width: 100px;
 
     margin: 0 2rem;
@@ -505,54 +509,50 @@ width: 600px;
 
   /* LISTAS */
 
-.lista {
-  width: 65%;
-}
+  .lista {
+    width: 65%;
+  }
 
-.lista li {
-  line-height: 1.5;
-}
+  .lista li {
+    line-height: 1.5;
+  }
 
-/* CONTROL DE CALIDAD */
-.QC-trenes {
-  display: block;
-  margin-inline: auto;
-  max-width: 80%;
-  border-radius: 18px;
-}
+  /* CONTROL DE CALIDAD */
+  .QC-trenes {
+    display: block;
+    margin-inline: auto;
+    max-width: 80%;
+    border-radius: 18px;
+  }
 
-.contenedor-trenes {
-  position: relative;
-  margin: 0 auto;
+  .contenedor-trenes {
+    position: relative;
+    margin: 0 auto;
 
-  width: fit-content;
-}
+    width: fit-content;
+  }
 
-.contenedor-trenes::after {
-  content: "";
+  .contenedor-trenes::after {
+    content: "";
 
-  position: absolute;
+    position: absolute;
 
-  left: 50%;
-  transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 
-  bottom: 0;
+    bottom: 0;
 
-  width: 80%;
-  height: 50%;
+    width: 80%;
+    height: 50%;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.80),
-    rgba(0, 0, 0, 0)
-  );
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 
-  border-radius: 0 0 18px 18px;
+    border-radius: 0 0 18px 18px;
 
-  pointer-events: none;
+    pointer-events: none;
 
-  z-index: 1;
-}
+    z-index: 1;
+  }
 }
 
 .boton-trenes {
@@ -568,9 +568,9 @@ width: 600px;
 }
 
 .boton-trenes:hover {
-    background: linear-gradient(to right, #0377a8, #3db3e3);
-    cursor: pointer;
-  }
+  background: linear-gradient(to right, #0377a8, #3db3e3);
+  cursor: pointer;
+}
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
