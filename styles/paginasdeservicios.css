@@ -511,6 +511,7 @@
 
   .lista {
     width: 65%;
+    margin-bottom: 1rem;
   }
 
   .lista li {
@@ -577,6 +578,8 @@
   .content {
     padding-inline: clamp(30px, 5vw, 90px);
     padding-bottom: 0;
+
+    margin-top: 1.2rem;
   }
 
   /* MENÚ */
@@ -586,6 +589,22 @@
     gap: 2rem;
 
     padding-inline: 2rem;
+  }
+
+  /* TEXTOS */
+
+  .p-servicios-pag {
+    font-size: 1.1rem;
+  }
+
+  .p-servicios {
+    font-size: 1.1rem;
+  }
+
+  /* LISTAS */
+
+  .lista {
+    margin-bottom: 1rem;
   }
 
   /* CONTENIDO TAB INSPECCIÓN Y DIAGNÓSTICO */

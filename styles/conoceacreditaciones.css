@@ -2,7 +2,6 @@
 
 .container-conoce-ema {
   background-color: #fafafa;
-
   margin-bottom: 0;
 }
 
@@ -37,12 +36,11 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* For desktop */
 @media screen and (min-width: 1119px) {
-
   .content-ema {
     margin-left: 6rem;
   }
@@ -78,4 +76,18 @@ a {
 
 /* NAV MOBILE*/
 @media screen and (max-width: 1118px) {
+  .container-conoce-ema {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .h2-conoce-ema,
+  .h3-conoce-ema {
+    text-align: center;
+  }
+
+  .boton-conoce {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
 }
