@@ -520,6 +520,7 @@
   .lista {
     width: 65%;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .lista li {
