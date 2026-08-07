@@ -209,7 +209,13 @@
   .icono-valor {
     width: 12rem;
     height: 12rem;
+
+    transition: transform 0.3s ease;
   }
+
+  .icono-valor:hover {
+  transform: scale(0.9);
+}
 
   .icono-valor img {
     width: 7rem;
