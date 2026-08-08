@@ -188,6 +188,18 @@
   width: 600px;
 }
 
+.img-equipo-5 {
+  width: 400px;
+  object-fit: cover;
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.img-equipo-5 img {
+  width: 400px;
+}
+
 .iconos {
   display: flex;
   justify-content: center;
@@ -448,7 +460,7 @@
   }
 
   .HP {
-     height: 60px;
+    height: 60px;
 
     margin: 2rem;
   }
@@ -518,7 +530,7 @@
   /* LISTAS */
 
   .lista {
-    width: 65%;
+    width: 90%;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
