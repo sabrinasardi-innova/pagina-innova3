@@ -1,0 +1,150 @@
+/* BASE */
+
+.contenedor-ema-amaac {
+display: flex;
+}
+
+.container-conoce-ema {
+  background-color: #fafafa;
+  margin-bottom: 0;
+}
+
+.container-amaac {
+  background-color: #e8e8e8;
+  margin-bottom: 0;
+}
+
+.h2-conoce-ema,
+.h2-conoce-amaac  {
+  font-family: "Klavika";
+  font-weight: 500;
+
+  color: #363735;
+}
+
+.h3-conoce-ema {
+  font-family: "Avenir";
+  font-weight: 300;
+
+  color: #363735;
+}
+
+.boton-conoce {
+  background: linear-gradient(to right, #ffa041, #ffc52e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.boton-conoce-2 {
+  background: linear-gradient(to right, #0377a8, #3db3e3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* For desktop */
+@media screen and (min-width: 1119px) {
+  .content-ema {
+    margin-left: 6rem;
+  }
+
+  .container-conoce-ema,
+  .container-amaac {
+    padding: 3rem;
+    margin: 0;
+  }
+
+  .h2-conoce-ema {
+    font-size: 1.8rem;
+
+    margin-bottom: 0;
+  }
+
+  .h2-conoce-amaac {
+    font-size: 1.7rem;
+
+    margin-bottom: 0;
+  }
+
+  .h3-conoce-ema {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .boton-conoce,
+  .boton-conoce-2 {
+    bottom: 2rem;
+    left: 50%;
+    padding: 1rem;
+  }
+
+  .boton-conoce:hover {
+    background: linear-gradient(to right, #0377a8, #3db3e3);
+    cursor: pointer;
+  }
+
+  .boton-conoce-2:hover {
+    background: linear-gradient(to right, #ffa041, #ffc52e);
+    cursor: pointer;
+  }
+}
+
+/* NAV MOBILE*/
+@media screen and (max-width: 1118px) {
+  .container-conoce-ema,
+  .container-amaac {
+    padding: 1.2rem;
+  }
+
+  .h2-conoce-ema,
+  .h3-conoce-ema,
+  .h2-conoce-amac {
+    text-align: center;
+  }
+
+  .h2-conoce-ema,
+  .h2-conoce-amaac {
+    font-size: 1.4rem;
+  }
+
+  .h3-conoce-ema,
+  .h3-conoce-amaac {
+    font-size: 1.2rem;
+  }
+
+  .boton-conoce,
+  .boton-conoce-2 {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    font-size: 1.1rem;
+  }
+
+  .boton-conoce-2  {
+    margin-top: 2.6rem;
+  }
+}
