@@ -101,6 +101,17 @@ if (headerPlaceholder) {
     );
   }
 
+  const emaamaacPlaceholder = document.getElementById("ema-amaac-placeholder");
+  if (emaamaacPlaceholder) {
+    fetches.push(
+      fetch("amaac.html")
+        .then((res) => res.text())
+        .then((html) => {
+          emaamaacPlaceholder.innerHTML = html;
+        }),
+    );
+  }
+
   Promise.all(fetches)
     .then(showMenu)
     .catch((error) => console.error("Error:", error));
