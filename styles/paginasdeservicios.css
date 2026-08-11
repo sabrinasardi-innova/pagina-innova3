@@ -475,7 +475,7 @@
   /* PAVIMENTOS AEROPORTUARIOS*/
 
   .gif-container-pci {
-    max-width: clamp(200px, 10vw, 300px);
+    max-width: clamp(200px, 10vw, 350px);
 
     display: flex;
     flex-direction: column;
@@ -484,8 +484,8 @@
   }
 
   .gif-pci {
-    width: clamp(180px, 10vw, 280px);
-    height: clamp(180px, 10vw, 280px);
+    width: clamp(190px, 10vw, 280px);
+    height: clamp(190px, 10vw, 280px);
 
     margin-bottom: 0.5rem;
   }
@@ -501,11 +501,11 @@
   }
 
   .pci {
-    width: clamp(230px, 10vw, 330px);
+    width: clamp(240px, 10vw, 330px);
   }
 
   .pcr {
-    height: clamp(205px, 10vw, 300px);
+    height: clamp(215px, 10vw, 300px);
   }
 
   .p-texto-gif {
