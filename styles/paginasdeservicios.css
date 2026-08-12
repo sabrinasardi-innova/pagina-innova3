@@ -316,6 +316,65 @@
   z-index: 2;
 }
 
+/* PROYECTO EJECUTIVO */
+
+.h2-PE {
+  font-family: "Klavika";
+  font-style: italic;
+  font-weight: 400;
+  color: #69676d;
+
+  border-top: #b1aeb6 1px solid;
+
+  line-height: 1.2;
+}
+
+.texto-PE {
+  display: block;
+
+  text-align: center;
+}
+
+.PE-card-container {
+  display: grid;
+}
+
+.PE-card {
+  border-radius: 50%;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.PE-icono {
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos {
+  background-color: #fccc50;
+}
+
+.memoria {
+  background-color: #a0c5e1;
+}
+
+.especificaciones {
+  background-color: #45b4e4;
+}
+
+.presupuesto {
+  background-color: #0c71a8;
+}
+
+.cronograma {
+  background-color: #ffa04a;
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
   /* MENÚ */
@@ -576,23 +635,86 @@
 
     z-index: 1;
   }
+
+  .boton-trenes {
+    position: absolute;
+
+    bottom: 2rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .boton-trenes:hover {
+    background: linear-gradient(to right, #0377a8, #3db3e3);
+    cursor: pointer;
+  }
+
+  /* PROYECTO EJECUTIVO */
+
+  .h2-PE {
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .texto-PE {
+    margin-top: 1rem;
+  }
+
+  .texto-PE h3 {
+    padding-top: 0.5rem;
+
+    max-width: 10rem;
+  }
+
+  .PE-card-container {
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 1.3rem;
+
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .PE-card {
+    width: 12rem;
+    height: 12rem;
+
+    transition: transform 0.3s ease;
+  }
+
+  .PE-card:hover {
+    transform: scale(0.9);
+  }
+
+  .PE-icono {
+    width: 10rem;
+    height: 10rem;
+
+    padding: 2rem;
+  }
+
+  .PE-icono img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .especificaciones img {
+  padding-bottom: 1rem;
 }
 
-.boton-trenes {
-  position: absolute;
-
-  bottom: 2rem;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  padding: 1rem;
-  margin-bottom: 1rem;
+.presupuesto img {
+  width: 5.5rem;
+  padding-bottom: 0.5;
 }
 
-.boton-trenes:hover {
-  background: linear-gradient(to right, #0377a8, #3db3e3);
-  cursor: pointer;
+.cronograma img {
+  width: 6rem;
+}
+
 }
 
 /* NAV MOBILE*/
@@ -740,4 +862,51 @@
   .ficha-tecnica {
     margin-top: 1rem;
   }
+
+  /* PROYECTO EJECUTIVO */
+
+  .h2-PE {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .PE-card-container {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .PE-icono {
+    width: 6rem;
+    height: 6rem;
+
+    padding: 1.5rem;
+  }
+
+  .PE-icono img {
+    width: 4rem;
+  }
+
+  .texto-PE {
+    max-width: 6rem;
+
+    margin-top: 0.5rem;
+  }
+
+  .especificaciones img {
+  padding-bottom: 0.5rem;
+}
+
+.presupuesto img {
+  width: 3.2rem;
+  padding-bottom: 0.2;
+}
+
+.cronograma img {
+  width: 3.7rem;
+}
 }
