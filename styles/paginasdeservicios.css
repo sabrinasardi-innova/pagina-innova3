@@ -200,6 +200,26 @@
   width: 400px;
 }
 
+.img-equipo-6 {
+  object-fit: cover;
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.img-equipo-6 img {
+  height: 330px;
+  width: auto;
+}
+
+.img-equipo-7 img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 15px;
+}
+
 .iconos {
   display: flex;
   justify-content: center;
@@ -484,7 +504,9 @@
 
   .img-equipo,
   .img-equipo-2,
-  .img-equipo-3 {
+  .img-equipo-3,
+  .img-equipo-6,
+  .img-equipo-7 {
     flex: 1;
   }
 
@@ -715,6 +737,25 @@
   width: 6rem;
 }
 
+/* PROYECTO EJECUTIVO */
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.img-grid {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 }
 
 /* NAV MOBILE*/
@@ -736,6 +777,11 @@
   }
 
   /* TEXTOS */
+
+  .h4-servicios-pag {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
 
   .p-servicios-pag {
     font-size: 1.1rem;
@@ -909,4 +955,21 @@
 .cronograma img {
   width: 3.7rem;
 }
+
+.img-equipo-6 img {
+  width: 400px;
+  height: auto;
 }
+
+/* PROYECTO EJECUTIVO */
+
+.img-grid {
+  margin-top: 0;
+  text-align: center;
+}
+
+.img-grid img {
+  width: 90%;
+}
+}
+
