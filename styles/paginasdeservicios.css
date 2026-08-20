@@ -183,6 +183,10 @@
   border-radius: 15px;
 }
 
+.img-equipo-3 img {
+  width: 100%;
+}
+
 .img-equipo-4 {
   width: 600px;
   height: 400px;
