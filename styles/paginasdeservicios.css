@@ -403,6 +403,49 @@
   background-color: #ffa04a;
 }
 
+/* CONTROL DE CALIDAD */
+.QC-trenes {
+  display: block;
+  margin-inline: auto;
+  border-radius: 18px;
+}
+
+.contenedor-trenes {
+  position: relative;
+  margin: 0 auto;
+
+  width: fit-content;
+}
+
+.contenedor-trenes::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 0;
+
+  height: 50%;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+
+  border-radius: 0 0 18px 18px;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.boton-trenes {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
 /* For desktop */
 @media screen and (min-width: 1119px) {
   /* MENÚ */
@@ -534,8 +577,7 @@
 
   .img-equipo,
   .img-equipo-2,
-  .img-equipo-2-copia
-  .img-equipo-3,
+  .img-equipo-2-copia .img-equipo-3,
   .img-equipo-6,
   .img-equipo-7 {
     flex: 1;
@@ -653,49 +695,17 @@
   }
 
   /* CONTROL DE CALIDAD */
+
   .QC-trenes {
-    display: block;
-    margin-inline: auto;
     max-width: 80%;
-    border-radius: 18px;
-  }
-
-  .contenedor-trenes {
-    position: relative;
-    margin: 0 auto;
-
-    width: fit-content;
   }
 
   .contenedor-trenes::after {
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    bottom: 0;
-
     width: 80%;
-    height: 50%;
-
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-
-    border-radius: 0 0 18px 18px;
-
-    pointer-events: none;
-
-    z-index: 1;
   }
 
   .boton-trenes {
-    position: absolute;
-
     bottom: 2rem;
-    left: 50%;
-
-    transform: translateX(-50%);
 
     padding: 1rem;
     margin-bottom: 1rem;
@@ -882,7 +892,7 @@
     padding-inline: clamp(20px, 5vw, 100px);
   }
 
-   .equipo-2 {
+  .equipo-2 {
     display: flex;
     flex-direction: column;
 
@@ -892,7 +902,7 @@
     padding-inline: clamp(20px, 5vw, 100px);
   }
 
-   .continuacion-taludes {
+  .continuacion-taludes {
     margin-top: 0;
     padding-inline: clamp(20px, 5vw, 100px);
   }
@@ -916,7 +926,8 @@
     order: 1;
   }
 
-  .IMT {
+  .IMT,
+  .IMT-2 {
     width: 100px;
 
     margin: 1rem;
@@ -952,7 +963,8 @@
     display: none;
   }
 
-  .skid-doctor {
+  .skid-doctor,
+  .skid-doctor-2 {
     height: 90px;
 
     margin: 1rem;
@@ -1036,16 +1048,16 @@
     margin-inline: auto;
   }
 
-    .img-equipo-4 {
-      width: 400px;
-      height: auto;
-      margin-inline: auto;
-      margin-bottom: 0;
-      padding: 0;
+  .img-equipo-4 {
+    width: 400px;
+    height: auto;
+    margin-inline: auto;
+    margin-bottom: 0;
+    padding: 0;
   }
 
-    .img-equipo-4 img {
-      width: 450px;
+  .img-equipo-4 img {
+    width: 450px;
   }
 
   /* PAVIMENTOS AEROPORTUARIOS*/
@@ -1058,7 +1070,6 @@
     align-items: center;
     text-align: center;
   }
-
 
   .gif-pci {
     width: clamp(180px, 8vw, 250px);
@@ -1090,7 +1101,26 @@
     width: 9.5rem;
   }
 
+  /* CONSULTORÍA*/
+
   .img-equipo-2-copia img {
     width: 400px;
+  }
+
+  /* CONTROL DE CALIDAD */
+
+  .QC-trenes {
+    width: 90%;
+  }
+
+  .contenedor-trenes::after {
+    width: 90%;
+    z-index: 1;
+  }
+
+  .boton-trenes {
+    bottom: 1rem;
+
+    padding: 0.5rem;
   }
 }
