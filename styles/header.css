@@ -231,7 +231,8 @@ a:active,
   margin-top: 0.5rem;
 }
 
-.dropdown__link {
+.dropdown__link,
+.abrir-tab {
   font-family: "Avenir", sans-serif;
   color: #767774;
   padding-left: 1.5rem;
@@ -425,7 +426,8 @@ a:active,
   }
 
   .dropdown__group,
-  .dropdown__link {
+  .dropdown__link,
+  .abrir-tab {
     padding: 0;
   }
 
