@@ -853,15 +853,16 @@
 
   .h3-servicios-pag {
     margin-top: 1rem;
+    text-align: center;
   }
 
   .ind-container {
-    display: block;
+    display: flex;
     margin: auto;
   }
 
   .gif-container {
-    margin: 1rem auto;
+    margin: 1rem 1.5rem;
   }
 
   .gif {
@@ -887,7 +888,7 @@
     flex-direction: column;
 
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     padding-inline: clamp(20px, 5vw, 100px);
   }
