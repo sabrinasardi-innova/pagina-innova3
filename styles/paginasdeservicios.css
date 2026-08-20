@@ -166,6 +166,14 @@
   border-radius: 15px;
 }
 
+.img-equipo-2-copia img {
+  width: 600px;
+  height: auto;
+  display: block;
+
+  border-radius: 15px;
+}
+
 .img-equipo-3 {
   width: 100%;
   height: 400px;
@@ -526,6 +534,7 @@
 
   .img-equipo,
   .img-equipo-2,
+  .img-equipo-2-copia
   .img-equipo-3,
   .img-equipo-6,
   .img-equipo-7 {
@@ -1018,5 +1027,70 @@
 
   .img-equipo-3 {
     height: auto;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .img-equipo-3 img {
+    width: 400px;
+    margin-inline: auto;
+  }
+
+    .img-equipo-4 {
+      width: 400px;
+      height: auto;
+      margin-inline: auto;
+      margin-bottom: 0;
+      padding: 0;
+  }
+
+    .img-equipo-4 img {
+      width: 450px;
+  }
+
+  /* PAVIMENTOS AEROPORTUARIOS*/
+
+  .gif-container-pci {
+    max-width: clamp(100px, 10vw, 200px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .gif-pci {
+    width: clamp(180px, 8vw, 250px);
+    height: clamp(180px, 8vw, 250px);
+
+    margin-bottom: 0.5rem;
+  }
+
+  .pcr-pci {
+    display: flex;
+    flex: 1;
+
+    gap: 7rem;
+
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .pci {
+    width: clamp(220px, 10vw, 300px);
+  }
+
+  .pcr {
+    height: clamp(190px, 10vw, 250px);
+  }
+
+  .p-texto-gif {
+    width: 9.5rem;
+  }
+
+  .img-equipo-2-copia img {
+    width: 400px;
   }
 }
